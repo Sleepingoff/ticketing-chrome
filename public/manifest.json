@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Ticket Cancellation Monitor",
+  "version": "1.0",
+  "permissions": ["tabs", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open Sidebar",
+    "default_icon": "icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html", "sidebar.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
